@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Challenge</title>
+		<%= csrf_meta_tags %>
+
+		<%= stylesheet_link_tag    'application', media: 'all' %>
+		<%= javascript_include_tag 'application' %>
+	</head>
+
+	<body>
+		<header>
+			<div class="pure-menu pure-menu-horizontal">
+				<ul class="pure-menu-list">
+					<% if user_signed_in? %>
+						<li class="pure-menu-item">
+							<%= link_to 'Log out', destroy_user_session_path, method: :delete , class: 'pure-menu-link pure-button' %>
+						</li>
+					<% else %>
+						<li class="pure-menu-item">
+							<%= link_to 'Sign In', new_user_session_path, class: 'pure-menu-link pure-button pure-button-primary' %>
+						</li>
+
+						<li class="pure-menu-item">
+							<%= link_to 'Sign Up', new_user_registration_path, class: 'pure-menu-link pure-button pure-button-primary' %>
+						</li>
+					<% end %>
+				</ul>
+			</div>
+		</header>
+
+		<main>
+			<%= yield %>
+		</main>
+	</body>
+</html>

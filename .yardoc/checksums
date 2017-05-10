@@ -1,0 +1,6 @@
+app/models/history.rb f184b6f4f2481f115e01256540decb7f371c3e8a
+app/models/lcbo_product.rb b6a34fd3a5adddfe226e1d1979991061e9270ed6
+app/models/view_product.rb d9ca3d133977286d8ed6679529b48904ceec432e
+app/services/history_service/fetch.rb 780f0b083749f0944c574548130ca899cd962e7b
+app/services/history_service/create.rb 2254d1c63b72bdf237d8e29ffb27c28a8caf819b
+app/services/lcbo_product_service/fetch.rb 049fb0df28ebaf3bcc6796a49fcb7e8968ce3048

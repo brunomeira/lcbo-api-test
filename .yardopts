@@ -1,0 +1,11 @@
+--output-dir docs/
+--exclude app/controllers/
+--exclude app/mailers/
+--exclude app/assets/
+--exclude app/views/
+--exclude app/services/history_service/base.rb
+--exclude app/models/concerns/lcbo_http_connector.rb
+--exclude app/services/lcbo_product_service/base.rb
+--exclude app/models/sql_record.rb
+--exclude app/models/redis_record.rb
+--exclude app/models/user.rb
